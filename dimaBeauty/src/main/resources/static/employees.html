@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employees</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Employees Management</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="clients.html">Clients</a>
+        <a href="services.html">Services</a>
+        <a href="appointments.html">Appointments</a>
+    </nav>
+</header>
+
+<div class="container">
+	
+	
+
+	<div class="form-box">
+	    <h2>Add / Update Employee</h2>
+
+	    <!-- HIDDEN ID -->
+	    <input type="hidden" id="id">
+
+	    <input id="name" placeholder="Name">
+	    <input id="specialty" placeholder="Specialty">
+
+	    <button onclick="saveEmployee()">Save</button>
+	</div>
+
+	
+	
+	<table>
+	    <thead>
+	        <tr>
+	            <th>ID</th><th>Name</th><th>Specialty</th><th>Actions</th>
+	        </tr>
+	    </thead>
+	    <tbody id="table"></tbody>
+	</table>
+
+	</div>
+	
+	<script src="js/employees.js"></script>
+	<!-- AUTH / LOGOUT JS (ALWAYS LAST) -->
+	<script src="js/auth.js"></script>
+	</body>
+	</html>

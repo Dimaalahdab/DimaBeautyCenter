@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointments</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Appointments Management</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="workers.html">Employees</a>
+        <a href="clients.html">Clients</a>
+        <a href="services.html">Services</a>
+    </nav>
+</header>
+
+<div class="container">
+
+<div class="form-box">
+    <h2>Create Appointment</h2>
+    <input id="clientId" placeholder="Client ID">
+    <input id="serviceId" placeholder="Service ID">
+    <input id="workerId" placeholder="Employee ID">
+    <input type="date" id="date">
+    <input type="time" id="time">
+    <button onclick="addAppointment()">Create</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Client</th>
+            <th>Employee</th>
+            <th>Service</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="table"></tbody>
+</table>
+
+</div>
+
+<script src="js/appointments.js"></script>
+</body>
+</html>

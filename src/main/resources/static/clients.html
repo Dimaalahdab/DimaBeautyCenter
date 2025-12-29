@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clients</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Clients Management</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="employees.html">Workers</a>
+        <a href="services.html">Services</a>
+        <a href="appointments.html">Appointments</a>
+    </nav>
+</header>
+
+<div class="container">
+
+<div class="form-box">
+    <h2>Add / Update Client</h2>
+    <input id="id" placeholder="ID (for update)">
+    <input id="name" placeholder="Client Name">
+    <input id="phone" placeholder="Phone">
+    <button onclick="saveClient()">Save</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="table"></tbody>
+</table>
+
+</div>
+
+<script src="js/clients.js"></script>
+</body>
+</html>

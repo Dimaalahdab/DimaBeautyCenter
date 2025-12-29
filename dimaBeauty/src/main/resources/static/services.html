@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Services</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Services Management</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="employees.html">Employees</a>
+        <a href="clients.html">Clients</a>
+        <a href="appointments.html">Appointments</a>
+    </nav>
+</header>
+
+<div class="container">
+
+	<div class="form-box">
+	    <h2>Add / Update Service</h2>
+
+	    <!-- hidden ID -->
+	    <input type="hidden" id="id">
+
+	    <input id="name" placeholder="Service Name">
+	    <input id="price" placeholder="Price">
+
+	    <button onclick="saveService()">Save</button>
+	</div>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th><th>Name</th><th>Price</th><th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="table"></tbody>
+</table>
+
+</div>
+
+<script src="js/services.js"></script>
+<!-- AUTH / LOGOUT JS (ALWAYS LAST) -->
+<script src="js/auth.js"></script>
+</body>
+</html>
